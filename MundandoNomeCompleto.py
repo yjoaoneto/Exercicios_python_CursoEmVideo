@@ -1,0 +1,7 @@
+nome = str(input('Digite seu nome completo: '))
+print('O nome em\033[32m maiúsculo\033[m fica {}'.format(nome.upper()))
+print('O nome em\033[31m minúsculo\033[m fica {}'.format(nome.lower()))
+e = nome.count(' ')
+print('O total de letras no nome é de \033[33m{}\033[m'.format(len(nome)- e))
+lista = nome.split()
+print('O primeiro nome possui\033[33m {}\033[m letras.'.format(len(lista[0])))
